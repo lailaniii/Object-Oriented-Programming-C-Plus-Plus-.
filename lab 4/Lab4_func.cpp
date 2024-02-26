@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 /** sumOfThree 
@@ -9,7 +10,8 @@ using namespace std;
  * @param z : (int)
  * @return int 
 */
-int sumOfThree(int x, int y, int z) {
+
+int sumOfThree(int x, int y, int z){
     return x + y + z;
 }
 
@@ -20,9 +22,10 @@ int sumOfThree(int x, int y, int z) {
  * @param y : (double)
  * @return double 
 */
-double division(double x, double y) {
-    return x / y;
-}
+
+double division(double x, double y){
+    return (x)/y;
+    }
 
 /** isGreaterThan
  * @brief returns whether x is greater than y 
@@ -32,7 +35,8 @@ double division(double x, double y) {
  * @return true : x is greater than y 
  * @return false : x is less than or equal to y 
 */
-bool isGreaterThan(double x, int y) {
+
+bool isGreaterThan(double x, int y){
     return x > y;
 }
 
@@ -47,15 +51,19 @@ bool isGreaterThan(double x, int y) {
  * @return string
 */
 string select(string func_type) {
-    if (func_type == "sum") {
-        return "The sum is ";
-    } else if (func_type == "division") {
-        return "The quotient is ";
-    } else if (func_type == "comparison") {
-        return "The first value being greater than the second value is ";
-    } else {
-        return "Invalid function type\n";
+
+    string out = "";
+
+    if (func_type == "sum"){
+        out = "The sum is ";
+    }else if (func_type == "division"){
+        out = "The quotient is ";
+    }else if (func_type == "comparison"){
+        out = "The first value being greater than the second value is ";
+    }else {
+        out = "Invalid function type";
     }
+    return out;
 }
 
 /** myPrint
@@ -66,7 +74,7 @@ string select(string func_type) {
  * @param output
 */
 template <typename T>
-void myPrint(string func_type, T output) {
+void myPrint(string func_type, T output){
     cout << select(func_type) << output << endl;
 }
 
@@ -83,7 +91,7 @@ int main() {
 
     // initialize 2 double parameters
     double dividend = 12345.1;
-    double divisor = 2345.6;  // Fixed typo
+    double divisor = 2345.6;  
 
     // call division
     double div_out = division(dividend, divisor);
@@ -92,6 +100,5 @@ int main() {
     // compare div_out and sum_out
     bool is_greater_out = isGreaterThan(div_out, sum_out);
     myPrint("comparison", is_greater_out);
-
     return 0;
 }
