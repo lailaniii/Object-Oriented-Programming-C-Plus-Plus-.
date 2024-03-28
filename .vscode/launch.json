@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/lailanigomez/Documents/GitHub/Object-Oriented-Programming-C-Plus-Plus",
+      "program": "/Users/lailanigomez/Documents/GitHub/Object-Oriented-Programming-C-Plus-Plus/build/Debug/outDebug"
+    }
+  ]
+}
