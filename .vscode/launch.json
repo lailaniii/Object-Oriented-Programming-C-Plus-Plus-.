@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/lailanigomez/Documents/GitHub/Object-Oriented-Programming-C-Plus-Plus",
-      "program": "/Users/lailanigomez/Documents/GitHub/Object-Oriented-Programming-C-Plus-Plus/build/Debug/outDebug"
+      "cwd": "/Users/lailanigomez/Documents/GitHub/Object-Oriented-Programming-C-Plus-Plus/lab5",
+      "program": "/Users/lailanigomez/Documents/GitHub/Object-Oriented-Programming-C-Plus-Plus/lab5/build/Debug/outDebug"
     }
   ]
 }
