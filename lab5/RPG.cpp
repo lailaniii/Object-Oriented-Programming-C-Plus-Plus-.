@@ -1,8 +1,8 @@
 #include "RPG.h"
 #include <iostream>
-using namespace std
-RPG::RPG()
-{
+using namespace std;
+
+RPG::RPG(){
     name = "NPC";
     health = 100;
     strength = 10;
@@ -32,7 +32,7 @@ int RPG::getStrength() const{
 }
 
 int RPG::getDefense() const{
-    return Defense;
+    return defense;
 }
 void RPG::setSkills()
 {
@@ -54,13 +54,13 @@ void RPG::setSkills()
     }
 }
 void RPG::printAction(string skill, RPG opponent){
-    printf("%s used %s on %s\n", name.c_str(), skill.c_str(), opponent.c_str())
+    printf("%s used %s on %s\n", name.c_str(), skill.c_str(), opponent.getName().c_str());
 }
-void RPG::updateHealth(int new_health){
-    health = new_health 
+
+void RPG:: updateHealth(int new_health){
+    health = new_health;
 }
 
 bool RPG::isAlive() const{
     return health > 0;
 }
-striung

@@ -1,6 +1,7 @@
-#ifdef RPG_H
+#ifndef RPG_H
 #define RPG_H
 using namespace std;
+#include <string>
 
 const int SKILL_SIZE = 2;
 
