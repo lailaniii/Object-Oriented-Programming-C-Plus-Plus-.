@@ -120,7 +120,7 @@ int main(){
         // repeats the the loop above so that it records the time
         // it takes for binarySearch to do the same operation
 
-    for(int i=0; i< elem_to_find.size(); i++) {
+    for(int i=0; i < elem_to_find.size(); i++) {
         //gets the elem to search for
         int elem = elem_to_find[i];
 
@@ -142,6 +142,6 @@ int main(){
 
         double speedup = average_iterative_time / average_binary_time;
         cout << "Speedup: " << speedup << endl;
-
+        
     return 0;
 }
